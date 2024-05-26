@@ -15,8 +15,8 @@ const Header = () => {
   };
 
   return (
-    <div className="p-5">
-      <div className="flex items-center justify-between">
+    <div className="p-5 ">
+      <div className="flex items-center justify-between  ">
         <div className="flex justify-start ">
           <img src={logo} alt="Neon Strategies Logo" className="w-12 h-12" />
           <h1 className="text-black text-sm w-2 font-semibold">
@@ -115,7 +115,7 @@ const Header = () => {
       </div>
 
       <div
-        className={`sidebar fixed top-20 left-0 h-full w-full bg-white bg-opacity-80 ${
+        className={`sidebar fixed top-20 left-0 h-full w-full bg-white  ${
           sidebarOpen ? "block" : "hidden"
         }`}
       >
@@ -146,7 +146,7 @@ const Header = () => {
               <ul className="absolute mt-2  w-full bg-white border rounded shadow-lg text-center ">
                 <li className="border-2 border-gray-100 p-3">
                   <Link
-                    className="block px-4 py-2 text-black hover:bg-blue-700 hover:text-white"
+                    className="block px-4 py-2 text-black hover:bg-gray-200"
                     to="/"
                   >
                     Digital Marketing
@@ -154,7 +154,7 @@ const Header = () => {
                 </li>
                 <li className="border-2 border-gray-100 p-3">
                   <Link
-                    className="block px-4 py-2 text-black  hover:bg-blue-900 hover:text-white"
+                    className="block px-4 py-2 text-black  hover:bg-gray-200"
                     to="/"
                   >
                     Branding
@@ -162,7 +162,7 @@ const Header = () => {
                 </li>
                 <li className="border-2 border-gray-100 p-3">
                   <Link
-                    className="block px-4 py-2 text-black  hover:bg-blue-900 hover:text-white"
+                    className="block px-4 py-2 text-black  hover:bg-gray-200"
                     to="/"
                   >
                     Creative Services
