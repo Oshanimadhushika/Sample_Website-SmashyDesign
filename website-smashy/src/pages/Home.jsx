@@ -82,7 +82,7 @@ const Home = () => {
 
         {/* what we do marketing */}
 
-        <div class="grid grid-cols-12 gap-5 p-10 pr-3 mt-3 container mx-auto">
+        <div class="grid grid-cols-12 gap-5 p-10 pr-3 mt-2 container mx-auto">
           <div class="col-span-12 sm:col-span-12 md:col-span-12  lg:col-span-5 xl:col-span-5   ">
             <h1 className="text-xl  font-bold font-sans text-start">
               Digital Marketing
@@ -128,7 +128,7 @@ const Home = () => {
 
         {/* what we do Branding */}
 
-        <div class="grid grid-cols-12 gap-5 p-10 pr-3 mt-3 container mx-auto">
+        <div class="grid grid-cols-12 gap-5 p-10 pr-3 mt-2 container mx-auto">
           <div class="col-span-12 sm:col-span-12 md:col-span-12  lg:col-span-5 xl:col-span-5   ">
             <h1 className="text-xl  font-bold font-sans text-start">
               Branding
@@ -175,7 +175,7 @@ const Home = () => {
 
         {/* what we do Creative Services */}
 
-        <div class="grid grid-cols-12 gap-5 p-10 pr-3 mt-3 container mx-auto">
+        <div class="grid grid-cols-12 gap-5 p-10 pr-3 mt-2 container mx-auto">
           <div class="col-span-12 sm:col-span-12 md:col-span-12  lg:col-span-5 xl:col-span-5   ">
             <h1 className="text-xl  font-bold font-sans text-start">
               Creative Services
@@ -250,6 +250,7 @@ const Home = () => {
           </div>
         </div>
 
+{/* about image */}
         <div class="grid grid-cols-12  mt-3 ">
           <div class="col-span-12 sm:col-span-12 md:col-span-12  lg:col-span-12 xl:col-span-12   ">
             <div className="relative   mx-0">
@@ -264,6 +265,29 @@ const Home = () => {
             </div>
           </div>
         </div>
+
+
+        {/* FAQ */}
+
+             {/* what we do */}
+
+             <div class="grid grid-cols-12 gap-5 p-10 pr-3 mt-6 container mx-auto">
+          <div class="col-span-12 sm:col-span-12 md:col-span-4  lg:col-span-4 xl:col-span-4   ">
+            <h1 className="text-lg md:text-sm font-bold font-sans text-start">
+            FAQ
+            </h1>
+          </div>
+          <div class=" col-span-12 sm:col-span-12 md:col-span-7  lg:col-span-6 xl:col-span-6 ">
+          <h1 className="text-2xl  font-semibold font-sans text-start">
+          Find Your Answers Here
+            </h1>
+            <p className="font-sans font-normal text-md mt-5 ">
+            Our services at Neon Strategies are tailored to meet the unique needs of your business,
+             ensuring that your brand not only stands out but also connects deeply with your audience.
+            </p>
+          </div>
+        </div>
+
       </div>
     </>
   );

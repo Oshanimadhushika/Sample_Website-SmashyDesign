@@ -45,7 +45,7 @@ const ImageSlider1 = () => {
           dotsDisabled={true}
           buttonsDisabled={true}
           autoPlay={true}
-          autoPlayInterval={3000}
+          autoPlayInterval={1000}
         />
       </div>
     </div>
