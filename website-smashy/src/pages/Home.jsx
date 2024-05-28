@@ -434,12 +434,12 @@ const Home = () => {
         {/* contact */}
 
         <div class="grid grid-cols-12 gap-5 p-10 pr-3 mt-6 container mx-auto ">
-          <div class="col-span-12 sm:col-span-12 md:col-span-4  lg:col-span-4 xl:col-span-4   ">
-            <h1 className="text-md md:text-sm font-bold font-sans text-start">
-              Nice to Meet You!
-            </h1>
+          <h1 className="text-2xl md:text-sm font-bold font-sans text-start">
+            Nice to Meet You!
+          </h1>
+          <div class=" col-span-12 sm:col-span-12 md:col-span-6  lg:col-span-6 xl:col-span-6 ">
+            <div></div>
           </div>
-          <div class=" col-span-12 sm:col-span-12 md:col-span-6  lg:col-span-6 xl:col-span-6 "></div>
 
           <div class=" col-span-12 sm:col-span-12 md:col-span-6  lg:col-span-6 xl:col-span-6 ">
             <div>
@@ -532,7 +532,9 @@ const Home = () => {
 
             <div class="col-span-12 sm:col-span-12 md:col-span-4  lg:col-span-4 xl:col-span-4   ">
               <div className="">
-                <h1 className="lg:text-center xl:text-center md:text-center sm:text-start text-start ">Website by Smashy Design</h1>
+                <h1 className="lg:text-center xl:text-center md:text-center sm:text-start text-start ">
+                  Website by Smashy Design
+                </h1>
               </div>
             </div>
           </div>
