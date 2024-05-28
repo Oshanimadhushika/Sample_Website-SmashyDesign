@@ -33,7 +33,19 @@ import { IoLogoInstagram } from "react-icons/io";
 
 import Mobile from "../assets/mobile.jpg";
 
+import 'aos/dist/aos.css';
+import AOS from 'aos';
+
 const Home = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 2000, 
+      once: false,    
+     
+    });
+  }, []);
+
   const faq = [
     {
       question: "What services does Neon Strategies offer?",
@@ -97,7 +109,7 @@ const Home = () => {
     <>
       <div class=" w-full">
         <div class="grid grid-cols-12  text-center container mx-auto">
-          <div class=" text-start p-10 col-span-12 sm:col-span-12 md:col-span-12  lg:col-span-9 xl:col-span-7">
+          <div class=" text-start p-10 col-span-12 sm:col-span-12 md:col-span-12  lg:col-span-9 xl:col-span-7" data-aos="fade-up">
             <h1 class="text-black  font-bold font-sans  text-5xl flex flex-col">
               Ignite Your Brand’s Potential <span>with Neon Strategies</span>
             </h1>
@@ -105,7 +117,7 @@ const Home = () => {
         </div>
 
         {/* welcome */}
-        <div class="grid grid-cols-12 gap-5 p-10 pr-3 container mx-auto">
+        <div class="grid grid-cols-12 gap-5 p-10 pr-3 container mx-auto" data-aos="fade-up">
           <div class="col-span-12 sm:col-span-12 md:col-span-4  lg:col-span-4 xl:col-span-4   ">
             <h1 className="text-md md:text-sm font-bold font-sans">
               WELCOME TO NEON STRATEGIES
@@ -135,7 +147,7 @@ const Home = () => {
         </div>
 
         {/* video */}
-        <div class="grid grid-cols-12  text-center container mx-auto">
+        <div class="grid grid-cols-12  text-center container mx-auto" >
           <div className="text-start p-4 col-span-12">
             <VideoComponent />
           </div>
@@ -143,7 +155,7 @@ const Home = () => {
 
         {/* what we do */}
 
-        <div class="grid grid-cols-12 gap-5 p-10 pr-3 mt-6 container mx-auto">
+        <div class="grid grid-cols-12 gap-5 p-10 pr-3 mt-6 container mx-auto" data-aos="fade-up">
           <div class="col-span-12 sm:col-span-12 md:col-span-4  lg:col-span-4 xl:col-span-4   ">
             <h1 className="text-md md:text-sm font-bold font-sans text-start">
               WHAT WE DO
@@ -159,7 +171,7 @@ const Home = () => {
 
         {/* what we do marketing */}
 
-        <div class="grid grid-cols-12 gap-5 p-10 pr-3 mt-2 container mx-auto">
+        <div class="grid grid-cols-12 gap-5 p-10 pr-3 mt-2 container mx-auto" data-aos="fade-up">
           <div class="col-span-12 sm:col-span-12 md:col-span-12  lg:col-span-5 xl:col-span-5   ">
             <h1 className="text-xl  font-bold font-sans text-start">
               Digital Marketing
@@ -205,7 +217,7 @@ const Home = () => {
 
         {/* what we do Branding */}
 
-        <div class="grid grid-cols-12 gap-5 p-10 pr-3 mt-2 container mx-auto">
+        <div class="grid grid-cols-12 gap-5 p-10 pr-3 mt-2 container mx-auto" data-aos="fade-up">
           <div class="col-span-12 sm:col-span-12 md:col-span-12  lg:col-span-5 xl:col-span-5   ">
             <h1 className="text-xl  font-bold font-sans text-start">
               Branding
@@ -252,7 +264,7 @@ const Home = () => {
 
         {/* what we do Creative Services */}
 
-        <div class="grid grid-cols-12 gap-5 p-10 pr-3 mt-2 container mx-auto">
+        <div class="grid grid-cols-12 gap-5 p-10 pr-3 mt-2 container mx-auto" data-aos="fade-up">
           <div class="col-span-12 sm:col-span-12 md:col-span-12  lg:col-span-5 xl:col-span-5   ">
             <h1 className="text-xl  font-bold font-sans text-start">
               Creative Services
@@ -295,7 +307,7 @@ const Home = () => {
 
         {/* About us */}
 
-        <div class="grid grid-cols-12 gap-8 p-10 pr-3 mt-6 container mx-auto">
+        <div class="grid grid-cols-12 gap-8 p-10 pr-3 mt-6 container mx-auto" data-aos="fade-up">
           <div class="col-span-12 sm:col-span-12 md:col-span-12  lg:col-span-4 xl:col-span-4   ">
             <h1 className="text-md  font-bold font-sans text-start">
               ABOUT US
@@ -328,7 +340,7 @@ const Home = () => {
         </div>
 
         {/* about image */}
-        <div class="grid grid-cols-12  mt-3 ">
+        <div class="grid grid-cols-12  mt-3 " data-aos="fade-up">
           <div class="col-span-12 sm:col-span-12 md:col-span-12  lg:col-span-12 xl:col-span-12   ">
             <div className="relative   mx-0">
               <img src={AboutImge} alt="" className="w-full h-auto" />
@@ -345,7 +357,7 @@ const Home = () => {
 
         {/* FAQ */}
 
-        <div class="grid grid-cols-12 gap-5 p-10 pr-3 mt-6 container mx-auto">
+        <div class="grid grid-cols-12 gap-5 p-10 pr-3 mt-6 container mx-auto" data-aos="fade-up">
           <div class="col-span-12 sm:col-span-12 md:col-span-4  lg:col-span-4 xl:col-span-4   ">
             <h1 className="text-lg md:text-sm font-bold font-sans text-start">
               FAQ
@@ -377,7 +389,7 @@ const Home = () => {
 
         {/* our process */}
 
-        <div class="grid grid-cols-12 gap-5   mt-6  bg-gray-100  lg:p-28  xl:p-28 md:p-28 sm:p-16 p-16 pb-0">
+        <div class="grid grid-cols-12 gap-5   mt-6  bg-gray-100  lg:p-28  xl:p-28 md:p-28 sm:p-16 p-16 pb-0" data-aos="fade-up">
           <div class="col-span-12 sm:col-span-12 md:col-span-4  lg:col-span-4 xl:col-span-4   ">
             <h1 className="text-md md:text-sm font-bold font-sans text-start">
               OUR PROCESS AT NEON STRATEGIES
@@ -393,7 +405,7 @@ const Home = () => {
 
         {/* colomns */}
 
-        <div class="grid grid-cols-12 gap-5 lg:p-28  xl:p-28 md:p-28 sm:p-16 p-16 bg-gray-100 pt-0">
+        <div class="grid grid-cols-12 gap-5 lg:p-28  xl:p-28 md:p-28 sm:p-16 p-16 bg-gray-100 pt-0" data-aos="fade-up">
           <div class=" col-span-12 sm:col-span-12 md:col-span-6  lg:col-span-4 xl:col-span-4 p-5 ">
             <h1 className="text-lg md:text-sm font-bold font-sans text-start">
               We ensures your marketing remains effective and relevant.
@@ -435,7 +447,7 @@ const Home = () => {
 
         {/* nice to meet */}
 
-        <div class="grid grid-cols-12 gap-4 p-10 pr-3 mt-6 container mx-auto ">
+        <div class="grid grid-cols-12 gap-4 p-10 pr-3 mt-6 container mx-auto " data-aos="fade-up">
           <div className="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-6 xl:col-span-6 mt-6">
             <div>
               <h1 className="text-5xl  font-bold font-sans text-start">
@@ -511,7 +523,7 @@ const Home = () => {
 
         {/* contact 2*/}
 
-        <div class="grid grid-cols-12 gap-5 p-10 pr-3 mt-6 container mx-auto ">
+        <div class="grid grid-cols-12 gap-5 p-10 pr-3 mt-6 container mx-auto " data-aos="fade-up">
           <div class="col-span-12 sm:col-span-12 md:col-span-12  lg:col-span-12 xl:col-span-12  ">
             <div className="flex justify-center">
               <button className="p-3 bg-blue-800 text-white hover:bg-gray-400 hover:text-black flex justify-center rounded-3xl xl:w-1/5 lg:w-1/5 md:w-1/5 sm:w-1/3 w-1/3">
@@ -533,7 +545,7 @@ const Home = () => {
 
         {/* contact 3*/}
 
-        <div class="grid grid-cols-12 gap-8 p-10 pr-3 mt-6 container mx-auto ">
+        <div class="grid grid-cols-12 gap-8 p-10 pr-3 mt-6 container mx-auto " data-aos="fade-up">
           <div class="col-span-12 sm:col-span-12 md:col-span-4  lg:col-span-4 xl:col-span-4   ">
             <h1 className="font-bold text-md lg:text-start xl:text-start md:text-start sm:text-center text-center">
               Address
@@ -573,7 +585,7 @@ const Home = () => {
           </div>
         </div>
 
-        <footer className=" border-t border-gray-200">
+        <footer className=" border-t border-gray-200" >
           <div class="grid grid-cols-12 gap-8 container mx-auto p-3">
             <div class="col-span-12 sm:col-span-12 md:col-span-4  lg:col-span-4 xl:col-span-4   ">
               <div className="text-start">
