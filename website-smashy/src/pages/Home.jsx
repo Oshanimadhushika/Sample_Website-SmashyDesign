@@ -14,8 +14,78 @@ import Img5 from "../assets/img5.png";
 import Img6 from "../assets/img6.png";
 import ImageSlider1 from "../components/ImageSlider1";
 import ImageSlider2 from "../components/ImageSlider2";
+import FAQItem from "../components/FAQItem";
+
+import Battery from "../assets/battery.png";
+import Hand from "../assets/hand.png";
+import File from "../assets/file.png";
+import Monitor from "../assets/monitor.png";
+import { FaRocket } from "react-icons/fa6";
+import Colomns from "../components/Colomns";
+import { MdBatteryCharging90 } from "react-icons/md";
+import { BsHandIndexThumbFill } from "react-icons/bs";
+import { FaFileAlt } from "react-icons/fa";
 
 const Home = () => {
+  const faq = [
+    {
+      question: "What services does Neon Strategies offer?",
+      answer:
+        "We offer a comprehensive range of marketing services, including Digital Marketing (SEO, PPC, Social Media Marketing, Content Marketing), Branding (Brand Strategy, Logo Design, Brand Identity), Creative Services (Graphic Design, Video Production, Photography), and Web Development (Website Design, E-commerce Solutions, UX/UI Design).",
+    },
+    {
+      question: "How does Neon Strategies approach a new project?",
+      answer:
+        "We offer a comprehensive range of marketing services, including Digital Marketing (SEO, PPC, Social Media Marketing, Content Marketing), Branding (Brand Strategy, Logo Design, Brand Identity), Creative Services (Graphic Design, Video Production, Photography), and Web Development (Website Design, E-commerce Solutions, UX/UI Design).",
+    },
+    {
+      question: "Can you help improve our existing marketing strategies?",
+      answer:
+        "We offer a comprehensive range of marketing services, including Digital Marketing (SEO, PPC, Social Media Marketing, Content Marketing), Branding (Brand Strategy, Logo Design, Brand Identity), Creative Services (Graphic Design, Video Production, Photography), and Web Development (Website Design, E-commerce Solutions, UX/UI Design).",
+    },
+    {
+      question: "What industries does Neon Strategies specialize in?",
+      answer:
+        "We offer a comprehensive range of marketing services, including Digital Marketing (SEO, PPC, Social Media Marketing, Content Marketing), Branding (Brand Strategy, Logo Design, Brand Identity), Creative Services (Graphic Design, Video Production, Photography), and Web Development (Website Design, E-commerce Solutions, UX/UI Design).",
+    },
+    {
+      question:
+        "How long does it take to see results from a marketing campaign?",
+      answer:
+        "We offer a comprehensive range of marketing services, including Digital Marketing (SEO, PPC, Social Media Marketing, Content Marketing), Branding (Brand Strategy, Logo Design, Brand Identity), Creative Services (Graphic Design, Video Production, Photography), and Web Development (Website Design, E-commerce Solutions, UX/UI Design).",
+    },
+  ];
+
+  const process = [
+    {
+      icon: <MdBatteryCharging90 />,
+      topic: "Research & Analysis",
+      paragraph:
+        "Our team conducts thorough market research and competitive analysis to gain insights into your industry and audience. We use this data to inform our strategies and ensure they are aligned with current market trends and customer behaviors.",
+    },
+
+    {
+      icon: <BsHandIndexThumbFill />,
+      topic: "Creative Concepting",
+      paragraph:
+        "Our creative team brainstorms and develops innovative concepts that align with your brand and strategy. We focus on creating compelling visuals and messages that resonate with your audience and differentiate your brand from the competition.",
+    },
+
+    {
+      icon: <FaFileAlt />,
+      topic: "Implementation",
+      paragraph:
+        "With a solid strategy and creative concepts in place, we move to the implementation phase. Our team executes the marketing plan across various channels, ensuring each element is aligned and working towards your goals. This includes launching campaigns, creating content, and optimizing your digital presence.",
+    },
+
+    {
+      icon: <FaRocket />,
+      topic: "Monitoring & Optimization",
+      paragraph:
+        "We continuously monitor the performance of our campaigns and strategies using advanced analytics tools. By tracking KPIs and other metrics, we gain insights into what’s working and what can be improved. We make data-driven adjustments to optimize performance and maximize ROI.",
+    },
+  ];
+
   return (
     <>
       <div class=" w-full">
@@ -250,13 +320,13 @@ const Home = () => {
           </div>
         </div>
 
-{/* about image */}
+        {/* about image */}
         <div class="grid grid-cols-12  mt-3 ">
           <div class="col-span-12 sm:col-span-12 md:col-span-12  lg:col-span-12 xl:col-span-12   ">
             <div className="relative   mx-0">
               <img src={AboutImge} alt="" className="w-full h-auto" />
 
-              <button className="absolute bottom-8 right-20 flex bg-opacity-70  border-2 border-gray-200 text-gray-200 rounded-3xl p-3 mt-6 text-xs hover:bg-blue-300 hover:text-white ">
+              <button className="absolute bottom-8 right-20  flex  bg-opacity-70 sm:justify-center border-2 border-gray-200 text-gray-200 rounded-3xl p-3 mt-6 text-xs hover:bg-blue-300 hover:text-white ">
                 Let's get in touch
                 <span className="ml-3 mt-1 text-gray-200">
                   <FaArrowRight />
@@ -266,28 +336,161 @@ const Home = () => {
           </div>
         </div>
 
-
         {/* FAQ */}
 
-             {/* what we do */}
-
-             <div class="grid grid-cols-12 gap-5 p-10 pr-3 mt-6 container mx-auto">
+        <div class="grid grid-cols-12 gap-5 p-10 pr-3 mt-6 container mx-auto">
           <div class="col-span-12 sm:col-span-12 md:col-span-4  lg:col-span-4 xl:col-span-4   ">
             <h1 className="text-lg md:text-sm font-bold font-sans text-start">
-            FAQ
+              FAQ
             </h1>
           </div>
           <div class=" col-span-12 sm:col-span-12 md:col-span-7  lg:col-span-6 xl:col-span-6 ">
-          <h1 className="text-2xl  font-semibold font-sans text-start">
-          Find Your Answers Here
+            <h1 className="text-2xl  font-semibold font-sans text-start">
+              Find Your Answers Here
             </h1>
             <p className="font-sans font-normal text-md mt-5 ">
-            Our services at Neon Strategies are tailored to meet the unique needs of your business,
-             ensuring that your brand not only stands out but also connects deeply with your audience.
+              Our services at Neon Strategies are tailored to meet the unique
+              needs of your business, ensuring that your brand not only stands
+              out but also connects deeply with your audience.
+            </p>
+          </div>
+
+          <div class=" col-span-12 sm:col-span-12 md:col-span-12  lg:col-span-12 xl:col-span-12 mt-5 ">
+            <div className="w-full">
+              {faq.map((faqData, index) => (
+                <FAQItem
+                  key={index}
+                  question={faqData.question}
+                  answer={faqData.answer}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* our process */}
+
+        <div class="grid grid-cols-12 gap-5 p-10 pr-3 mt-6 container mx-auto bg-gray-100 pb-0">
+          <div class="col-span-12 sm:col-span-12 md:col-span-4  lg:col-span-4 xl:col-span-4   ">
+            <h1 className="text-md md:text-sm font-bold font-sans text-start">
+              OUR PROCESS AT NEON STRATEGIES
+            </h1>
+          </div>
+          <div class=" col-span-12 sm:col-span-12 md:col-span-7  lg:col-span-6 xl:col-span-6 ">
+            <p className="font-sans font-normal text-3xl ">
+              Our process at Neon Strategies is designed to be thorough,
+              flexible, and client-focused
             </p>
           </div>
         </div>
 
+        {/* colomns */}
+
+        <div class="grid grid-cols-12 gap-5 lg:p-28  xl:p-28 md:p-28 sm:p-16 p-16 bg-gray-100 sm:mt-3 ">
+          <div class=" col-span-12 sm:col-span-12 md:col-span-6  lg:col-span-4 xl:col-span-4 p-5">
+            <h1 className="text-lg md:text-sm font-bold font-sans text-start">
+              We ensures your marketing remains effective and relevant.
+            </h1>
+            <p className="font-sans font-normal text-sm mt-4 ">
+              At Neon Strategies, we believe that a well-defined process is key
+              to delivering exceptional results. Our approach is collaborative,
+              transparent, and tailored to meet the unique needs of each client.
+              Here’s a step-by-step overview of how we work:
+            </p>
+          </div>
+
+          {process.slice(0, 4).map((column, index) => (
+            <div
+              key={index}
+              className="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-4 text-center p-3"
+            >
+              <Colomns
+                icon={column.icon}
+                topic={column.topic}
+                paragraph={column.paragraph}
+              />
+            </div>
+          ))}
+
+          <div class="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-4 text-center">
+            <div className="flex justify-center items-center mt-4">
+              <button className="flex bg-opacity-70 border-2 border-black text-black rounded-3xl p-3 mt-6 text-xs hover:bg-gray-200 w-full">
+                Contact Us to Get Started
+                <span className="ml-3 mt-1 text-black">
+                  <FaArrowRight />
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* contact */}
+
+        <div class="grid grid-cols-12 gap-5 p-10 pr-3 mt-6 container mx-auto bg-gray-100 pb-0">
+          <div class="col-span-12 sm:col-span-12 md:col-span-4  lg:col-span-4 xl:col-span-4   ">
+            <h1 className="text-md md:text-sm font-bold font-sans text-start">
+              Nice to Meet You!
+            </h1>
+          </div>
+          <div class=" col-span-12 sm:col-span-12 md:col-span-6  lg:col-span-6 xl:col-span-6 "></div>
+
+          <div class=" col-span-12 sm:col-span-12 md:col-span-6  lg:col-span-6 xl:col-span-6 ">
+            <div>
+              <img src="" alt="" />
+            </div>
+          </div>
+        </div>
+
+        {/* contact 2*/}
+
+        <div class="grid grid-cols-12 gap-5 p-10 pr-3 mt-6 container mx-auto bg-gray-100 pb-0">
+          <div class="col-span-12 sm:col-span-12 md:col-span-12  lg:col-span-12 xl:col-span-12   ">
+            <button className="p-3 bg-blue-800 text-white hover:bg-gray-400 hover:text-black flex justify-center">
+              Get In Touch
+            </button>
+            <p className="text-md md:text-sm font-bold font-sans text-center">
+              We’d love to hear from you! Whether you’re ready to start your
+              project or just have a question, feel free to reach out.
+            </p>
+
+            <p className="text-center text-md font-normal">
+              info@neostrategies.com
+            </p>
+          </div>
+        </div>
+
+        {/* contact 3*/}
+
+        <div class="grid grid-cols-12 gap-5 p-10 pr-3 mt-6 container mx-auto bg-gray-100 pb-0">
+          <div class="col-span-12 sm:col-span-12 md:col-span-4  lg:col-span-4 xl:col-span-4   ">
+            <h1 className="font bold text-md text-start">Address</h1>
+            <p>
+              <span className="text-sm">Neon Strategies Ltd.</span>
+              <span>123 Marketing Street </span>
+              <span>London,W1A 1AA</span>
+              <span>United Kingdom</span>{" "}
+            </p>
+          </div>
+
+          <div class="col-span-12 sm:col-span-12 md:col-span-4  lg:col-span-4 xl:col-span-4   ">
+            <h1>Monday - Friday: 9:00 AM - 6:00 PM</h1>
+          </div>
+
+          <div class="col-span-12 sm:col-span-12 md:col-span-4  lg:col-span-4 xl:col-span-4   ">
+            <h1  className="font bold text-md text-start">FOLLOW US</h1>
+            <div>
+
+            </div>
+          </div>
+        </div>
+
+        <footer className="p-2">
+        <h1 className="text-start">© 2024 Neon Strategies, All rights reserved.</h1>
+        <h1 className="text-center">Privacy Policy I Term & Conditions</h1>
+        <h1 className="text-end">Website by Smashy Design</h1>
+
+          
+        </footer>
       </div>
     </>
   );
