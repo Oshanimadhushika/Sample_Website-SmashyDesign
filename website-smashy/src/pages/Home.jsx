@@ -31,6 +31,8 @@ import { CiFacebook } from "react-icons/ci";
 import { TbCircleLetterX } from "react-icons/tb";
 import { IoLogoInstagram } from "react-icons/io";
 
+import Mobile from "../assets/mobile.jpg";
+
 const Home = () => {
   const faq = [
     {
@@ -375,7 +377,7 @@ const Home = () => {
 
         {/* our process */}
 
-        <div class="grid grid-cols-12 gap-5 p-10 pr-3 mt-6 container mx-auto bg-gray-100 pb-0">
+        <div class="grid grid-cols-12 gap-5   mt-6  bg-gray-100  lg:p-28  xl:p-28 md:p-28 sm:p-16 p-16 pb-0">
           <div class="col-span-12 sm:col-span-12 md:col-span-4  lg:col-span-4 xl:col-span-4   ">
             <h1 className="text-md md:text-sm font-bold font-sans text-start">
               OUR PROCESS AT NEON STRATEGIES
@@ -391,8 +393,8 @@ const Home = () => {
 
         {/* colomns */}
 
-        <div class="grid grid-cols-12 gap-5 lg:p-28  xl:p-28 md:p-28 sm:p-16 p-16 bg-gray-100 sm:mt-3 ">
-          <div class=" col-span-12 sm:col-span-12 md:col-span-6  lg:col-span-4 xl:col-span-4 p-5">
+        <div class="grid grid-cols-12 gap-5 lg:p-28  xl:p-28 md:p-28 sm:p-16 p-16 bg-gray-100 pt-0">
+          <div class=" col-span-12 sm:col-span-12 md:col-span-6  lg:col-span-4 xl:col-span-4 p-5 ">
             <h1 className="text-lg md:text-sm font-bold font-sans text-start">
               We ensures your marketing remains effective and relevant.
             </h1>
@@ -431,19 +433,78 @@ const Home = () => {
           </div>
         </div>
 
-        {/* contact */}
+        {/* nice to meet */}
 
-        <div class="grid grid-cols-12 gap-5 p-10 pr-3 mt-6 container mx-auto ">
-          <h1 className="text-2xl md:text-sm font-bold font-sans text-start">
-            Nice to Meet You!
-          </h1>
-          <div class=" col-span-12 sm:col-span-12 md:col-span-6  lg:col-span-6 xl:col-span-6 ">
-            <div></div>
+        <div class="grid grid-cols-12 gap-4 p-10 pr-3 mt-6 container mx-auto ">
+          <div className="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-6 xl:col-span-6 mt-6">
+            <div>
+              <h1 className="text-5xl  font-bold font-sans text-start">
+                Nice to Meet You!
+              </h1>
+            </div>
+
+            <div className="space-y-16 pt-9">
+              <div>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  className="mt-1 block w-full border-0 border-b-2 border-gray-200 focus:border-blue-500 focus:outline-none"
+                  placeholder="Your Name"
+                />
+              </div>
+
+              <div>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  className="mt-1 block w-full border-0 border-b-2 border-gray-200 focus:border-blue-500 focus:outline-none"
+                  placeholder="Your Phone Number"
+                />
+              </div>
+
+              <div>
+                <select
+                  id="referral"
+                  name="referral"
+                  className="mt-1 block w-full border-0 border-b-2 border-gray-200 focus:border-blue-500 focus:outline-none"
+                >
+                  <option
+                    className="text-gray-300"
+                    value=""
+                    disabled
+                    selected
+                    hidden
+                  >
+                    How do you know about us?
+                  </option>
+                  <option value="friend">Friend</option>
+                  <option value="socialMedia">Social Media</option>
+                  <option value="searchEngine">Search Engine</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div>
+                <input
+                  id="project"
+                  name="project"
+                  rows="4"
+                  className="mt-1 block w-full border-0 border-b-2 border-gray-200 focus:border-blue-500 focus:outline-none"
+                  placeholder="Brief your project"
+                ></input>
+              </div>
+            </div>
           </div>
 
-          <div class=" col-span-12 sm:col-span-12 md:col-span-6  lg:col-span-6 xl:col-span-6 ">
-            <div>
-              <img src="" alt="" />
+          <div class=" col-span-12 sm:col-span-12 md:col-span-12  lg:col-span-6 xl:col-span-6 ">
+            <div className="flex justify-center items-center rounded-lg p-20 object-cover ">
+              <img
+                src={Mobile}
+                alt=""
+                className="w-auto h-auto rounded-xl text-center align-middle"
+              />
             </div>
           </div>
         </div>
@@ -453,7 +514,7 @@ const Home = () => {
         <div class="grid grid-cols-12 gap-5 p-10 pr-3 mt-6 container mx-auto ">
           <div class="col-span-12 sm:col-span-12 md:col-span-12  lg:col-span-12 xl:col-span-12  ">
             <div className="flex justify-center">
-              <button className="p-3 bg-blue-800 text-white hover:bg-gray-400 hover:text-black flex justify-center rounded-3xl">
+              <button className="p-3 bg-blue-800 text-white hover:bg-gray-400 hover:text-black flex justify-center rounded-3xl xl:w-1/5 lg:w-1/5 md:w-1/5 sm:w-1/3 w-1/3">
                 Get In Touch
               </button>
             </div>

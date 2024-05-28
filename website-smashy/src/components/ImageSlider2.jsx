@@ -42,6 +42,7 @@ const ImageSlider1 = () => {
             768: { items: 2 },
             1024: { items: 2 },
           }}
+          infinite={true} 
           dotsDisabled={true}
           buttonsDisabled={true}
           autoPlay={true}
