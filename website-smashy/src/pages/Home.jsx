@@ -420,15 +420,13 @@ const Home = () => {
           <div class="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-4 text-center">
             <div className="flex justify-center items-center mt-4">
               <div className="flex justify-center pt-16">
-
-              <button className="flex bg-opacity-70 border-2 border-black text-black rounded-3xl p-3 mt-6 text-xs hover:bg-blue-200 w-full text-center">
-                Contact Us to Get Started
-                <span className="ml-3 mt-1 text-black">
-                  <FaArrowRight />
-                </span>
-              </button>
+                <button className="flex bg-opacity-70 border-2 border-black text-black rounded-3xl p-3 mt-6 text-xs hover:bg-blue-200 w-full text-center">
+                  Contact Us to Get Started
+                  <span className="ml-3 mt-1 text-black">
+                    <FaArrowRight />
+                  </span>
+                </button>
               </div>
-             
             </div>
           </div>
         </div>
@@ -454,18 +452,17 @@ const Home = () => {
 
         <div class="grid grid-cols-12 gap-5 p-10 pr-3 mt-6 container mx-auto ">
           <div class="col-span-12 sm:col-span-12 md:col-span-12  lg:col-span-12 xl:col-span-12  ">
-            <div className="flex justify-center"> 
-            <button className="p-3 bg-blue-800 text-white hover:bg-gray-400 hover:text-black flex justify-center rounded-3xl">
-              Get In Touch
-            </button>
+            <div className="flex justify-center">
+              <button className="p-3 bg-blue-800 text-white hover:bg-gray-400 hover:text-black flex justify-center rounded-3xl">
+                Get In Touch
+              </button>
             </div>
             <div className="flex justify-center">
-            <p className="text-3xl font-bold font-sans text-center mt-3 w-2/3">
-              We’d love to hear from you! Whether you’re ready to start your
-              project or just have a question, feel free to reach out.
-            </p>
+              <p className="text-3xl font-bold font-sans text-center mt-3 w-2/3">
+                We’d love to hear from you! Whether you’re ready to start your
+                project or just have a question, feel free to reach out.
+              </p>
             </div>
-           
 
             <p className="text-center text-md font-normal mt-4">
               info@neostrategies.com
@@ -477,10 +474,14 @@ const Home = () => {
 
         <div class="grid grid-cols-12 gap-8 p-10 pr-3 mt-6 container mx-auto ">
           <div class="col-span-12 sm:col-span-12 md:col-span-4  lg:col-span-4 xl:col-span-4   ">
-            <h1 className="font-bold text-md lg:text-start xl:text-start md:text-start sm:text-center text-center">Address</h1>
+            <h1 className="font-bold text-md lg:text-start xl:text-start md:text-start sm:text-center text-center">
+              Address
+            </h1>
             <p className="lg:text-start xl:text-start md:text-start sm:text-center text-center">
               <h1 className="text-sm font-normal mt-1">Neon Strategies Ltd.</h1>
-              <h1 className="text-sm font-normal mt-1">123 Marketing Street </h1>
+              <h1 className="text-sm font-normal mt-1">
+                123 Marketing Street{" "}
+              </h1>
               <h1 className="text-sm font-normal mt-1">London,W1A 1AA</h1>
               <h1 className="text-sm font-normal mt-1">United Kingdom</h1>{" "}
             </p>
@@ -491,25 +492,50 @@ const Home = () => {
           </div>
 
           <div class="col-span-12 sm:col-span-12 md:col-span-4  lg:col-span-4 xl:col-span-4   ">
-            <h1  className="font-bold text-md text-center">FOLLOW US</h1>
+            <h1 className="font-bold text-md text-center">FOLLOW US</h1>
             <div className="flex gap-3 text-3xl text-center justify-center mt-6">
-               <a href=""><TiSocialLinkedinCircular /></a>
-               <a href=""><CiFacebook /></a>
+              <a href="">
+                <TiSocialLinkedinCircular />
+              </a>
+              <a href="">
+                <CiFacebook />
+              </a>
 
-               <a href=""><TbCircleLetterX /></a>
+              <a href="">
+                <TbCircleLetterX />
+              </a>
 
-               <a href=""><IoLogoInstagram /></a>
-
+              <a href="">
+                <IoLogoInstagram />
+              </a>
             </div>
           </div>
         </div>
 
-        <footer className="p-2">
-        <h1 className="text-start">© 2024 Neon Strategies, All rights reserved.</h1>
-        <h1 className="text-center">Privacy Policy I Term & Conditions</h1>
-        <h1 className="text-end">Website by Smashy Design</h1>
+        <footer className=" border-t border-gray-200">
+          <div class="grid grid-cols-12 gap-8 container mx-auto p-3">
+            <div class="col-span-12 sm:col-span-12 md:col-span-4  lg:col-span-4 xl:col-span-4   ">
+              <div className="text-start">
+                <h1 className="text-start">
+                  © 2024 Neon Strategies, All rights reserved.
+                </h1>
+              </div>
+            </div>
 
-          
+            <div class="col-span-12 sm:col-span-12 md:col-span-4  lg:col-span-4 xl:col-span-4   ">
+              <div className="">
+                <h1 className="lg:text-center xl:text-center md:text-center sm:text-start text-start">
+                  Privacy Policy I Term & Conditions
+                </h1>
+              </div>{" "}
+            </div>
+
+            <div class="col-span-12 sm:col-span-12 md:col-span-4  lg:col-span-4 xl:col-span-4   ">
+              <div className="">
+                <h1 className="lg:text-center xl:text-center md:text-center sm:text-start text-start ">Website by Smashy Design</h1>
+              </div>
+            </div>
+          </div>
         </footer>
       </div>
     </>
